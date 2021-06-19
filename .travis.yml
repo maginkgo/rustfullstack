@@ -14,7 +14,7 @@ before_script:
   - cargo install-update -a
 
 script:
-  - mdbook build && mdbook test 
+  - mdbook build /home/travis/build/maginkgo/rustfullstack && mdbook test /home/travis/build/maginkgo/rustfullstack
   
 deploy:
   provider: pages
@@ -22,6 +22,7 @@ deploy:
   edge: true
   cleanup: false
   github-token: $GITHUB_TOKEN
+  local-dir: /home/travis/build/maginkgo/rustfullstack/book
   keep-history: false
   on:
     branch: master
