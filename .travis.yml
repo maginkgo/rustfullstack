@@ -25,5 +25,5 @@ deploy:
   local-dir: /home/travis/build/maginkgo/rustfullstack/book
   keep-history: false
   on:
-    branch: master
+    branch: main
   target_branch: gh-pages
