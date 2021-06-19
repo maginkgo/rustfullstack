@@ -5,3 +5,34 @@ multilingual = false
 src = "src"
 title = "Rust Full Stack"
 
+[output.html]
+default-theme = "dark"
+git-repository-url = "https://github.com/maginkgo/rustfullstack"
+site-url = "/example-book/"
+cname = "myproject.rs"
+
+[output.html.print]
+enable = true
+
+[output.html.fold]
+enable = false
+level = 0
+
+[output.html.playground]
+editable = false
+copy-js = true
+line-numbers = false
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true
+
+[output.html.redirect]
