@@ -8,8 +8,6 @@ title = "Rust Full Stack"
 [output.html]
 default-theme = "dark"
 git-repository-url = "https://github.com/maginkgo/rustfullstack"
-site-url = "/example-book/"
-cname = "myproject.rs"
 
 [output.html.print]
 enable = true
