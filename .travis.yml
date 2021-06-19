@@ -1,5 +1,6 @@
 language: rust
-sudo: false
+os: linux
+dist: xenial
 
 cache:
   - cargo
@@ -13,13 +14,15 @@ before_script:
   - cargo install-update -a
 
 script:
-  - mdbook build rustfullstack/book && mdbook test rustfullstack/book
-
+  - mdbook build && mdbook test 
+  
 deploy:
   provider: pages
-  skip-cleanup: true
+  strategy: git
+  edge: true
+  cleanup: false
   github-token: $GITHUB_TOKEN
-  local-dir: rustfullstack/book
   keep-history: false
   on:
-    branch: main
+    branch: master
+  target_branch: gh-pages
