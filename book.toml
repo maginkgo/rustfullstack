@@ -1,0 +1,7 @@
+[book]
+authors = ["maginkgo"]
+language = "es"
+multilingual = false
+src = "src"
+title = "Rust Full Stack"
+
